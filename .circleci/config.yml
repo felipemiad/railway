@@ -28,16 +28,8 @@ jobs:
       - run:
           name: Deploy to Railway App
           command: |
-            cd bankchurn-api 
+            cd bankchurn-api
             railway up --service=railway
-
-
-tags_only: &tags_only
-  filters:
-    branches:
-      ignore: /.*/
-    tags:
-      only: /^.*/
 
 workflows:
   version: 1
